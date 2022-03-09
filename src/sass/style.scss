@@ -34,7 +34,7 @@ ul {
     height: 3px;
     width: 60px;
     background-color: $mainColor;
-    margin-top: 25px;
+    margin: 25px auto 0 auto;
 }
 
 @import 'blocks/promo';
@@ -43,3 +43,4 @@ ul {
 @import 'blocks/sidepanel';
 @import 'blocks/menu-promo';
 @import 'blocks/about';
+@import 'blocks/resume';
