@@ -11,3 +11,18 @@
         z-index: -1;
     }
 }
+
+@mixin before_circle-center {
+    &:before {
+        content: '';
+        width: 36px;
+        height: 36px;
+        position: absolute;
+        top: -6px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 100%;
+        background-color: $mainColor;
+        z-index: -1;
+    }
+}

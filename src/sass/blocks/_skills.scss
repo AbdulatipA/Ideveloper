@@ -1,0 +1,85 @@
+.skills {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle-center;
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, minmax(270px, auto));
+        grid-auto-rows: minmax(270px, auto);
+        gap: 13px;
+
+        &-img {
+            position: relative;
+            width: auto;
+            height: 65px;
+            img {
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        &-title {
+            margin-top: 20px;
+        }
+        &-descr {
+            margin-top: 15px;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+
+    &__item {
+        padding: 30px 30px 25px 30px;
+        border: 1px solid #000;
+    }
+
+    &__ratings {
+        margin-top: 120px;
+        display: grid;
+        grid-template: repeat(2, 70px) / repeat(3, 350px);
+        column-gap: 45px;
+        row-gap: 30px;
+        &-item {
+            display: grid;
+            grid-template: 21px 14px / 200px auto;
+            justify-content: space-between;
+            align-content: space-between;
+        }
+        &-title {
+            position: relative;
+            font-weight: 700;
+            padding-left: 14px;
+            @include before_circle;
+            &:before {
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+        &-line {
+            width: 100%;
+            height: 14px;
+            border-radius: 4px;
+            background-color: #E8E4DE;
+            grid-column: 1/3;
+            span {
+                display: block;
+                height: 100%;
+                width: 50%;
+                background-color: $mainColor;
+                border-radius: 4px;
+            }
+        }
+    }
+}
