@@ -26,6 +26,14 @@
         &__ratings {
             justify-content: center;
         }
+    }
+    .portfolio {
+        &__wrapper {
+            .horizontal, .vertical{
+                grid-row: unset;
+                grid-column: unset;
+            }
+        }
     } 
 }
 
